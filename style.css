@@ -1,0 +1,419 @@
+* {
+    border-style: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+img {
+    min-width: 100%;
+    height: auto;
+}
+
+header {
+    position:  relative;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.96);
+    width: 100%;
+    background-color: #f3f6fa;
+    margin: 0 auto;
+}
+
+.logo-img {
+    margin-left: 30px;
+}
+
+.navbartitle {
+    display: flex;
+    text-shadow: 2px 2px 2px rgba(53, 50, 50, 0.586);
+}
+
+.ps {
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-link {
+    margin-right: 25px;
+    color: #95999f;
+    font-size: 19px;
+    margin: 0;
+    text-decoration: none;
+    text-align: right;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 80px;
+}
+
+.title {
+    color: black;
+    font-size: 30px;
+}
+
+.title2{
+    color: #8bbbdd;
+    font-size: 30px;
+}
+
+.icons {
+    color: #8bbbdd;
+    font-size: 22px;
+}
+
+.toggle_btn {
+    display: none;
+}
+
+.toggle_btn i {
+    color: #8bbbdd;
+    font-size: 22px;
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    height: 0;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(169, 189, 211, 0.508);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: rgb(5, 61, 128);
+}
+
+.dropdown_menu a  {
+    text-decoration: none;
+    color: #163D80;
+}
+
+.dropdown_menu a:hover{
+    background-color: rgba(139, 187, 221, 0.813);
+}
+
+.dropdown_menu.open {
+    height: 180px;
+}
+
+.dropdown_menu a {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s linear;
+}
+
+.fa-solid {
+    margin-right: 30px;
+}
+
+.rotate {
+    rotate: 270deg;
+}
+
+    @media only screen and (max-width:700px){
+        .icons{
+            display: none !important;
+        }
+        .toggle_btn i {
+            display: block;
+        }
+        .ps {
+            display: none;
+        }
+        .navbar {
+            justify-content: space-between;
+        }
+        .dropdown_menu {
+            display: block;
+        }
+        .toggle_btn {
+            display: block;
+        }
+    }
+
+
+.pg1 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 140px;
+    background-image: url('pg1bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: white;
+}
+
+.pg1title {
+    font-weight: bold;
+    margin: 40px;
+    line-height: 1.4;
+}
+
+.pg1txt {
+    font-size: 21px;
+    margin: 40px;
+    line-height: 1.6;
+}
+
+.down-arrow {
+    font-size: 45px;
+    color: white;
+}
+
+.pg2 {
+    padding-bottom: 100px;
+    padding: 40px;
+}
+
+.pg2-top {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.icon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pg2-icon1 {
+    padding-right: 13px;
+    color: #DFA85B;
+}
+
+.pg2-icon2 {
+    color: #7B7CF1;
+}
+
+.pg2-icon3 {
+    color: #AF4889;
+}
+
+.pg2title {
+    font-size: 37px;
+    margin-right: 60px;
+}
+
+.title-name {
+    color: #8ACBFE;
+    background-color: #151119;
+    margin: 0;
+    padding: 0;
+}
+
+.pg2txt {
+    width: 600px;
+    font-size: 20px;
+}
+
+.pg2prt2 {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.pg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151119;
+    padding: 30px;
+}
+
+.pg3box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+    font-size: 22px;
+}
+
+.pg3box1, .pg3box2, .pg3box3 {
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #8ACBFE;
+    color: #151119;
+    line-height: 1.6;
+}
+
+.pg3-icon {
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 7px;
+}
+
+.pg3icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pg4 {
+    height: auto;
+    font-size: 25px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.resume {
+    text-align: center;
+}
+
+.pg4title {
+    margin: 40px;
+    font-size: 37px;
+}
+
+.pg4txt {
+    margin: 40px;
+    font-size: 28px;
+}
+
+.ul {
+    margin-left: 170px;
+    margin-bottom: 60px;
+}
+
+.pg4btn {
+    padding: 18px;
+    width: 450px;
+    background-color: #151119;
+    color: #8ACBFE;
+    text-decoration: none;
+    border-radius: 13px;
+    margin: auto;
+}
+
+.pg4li {
+    text-align-last: left;
+}
+
+.pg5 {
+    background-color: #151119;
+    color: #8ACBFE;
+    padding: 80px;
+    font-size: 33px;
+}
+
+.pg5title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pg5icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pg5icon {
+    color: #8ACBFE;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width:980px) {
+    .pg2title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:906px) {
+    .pg2txt {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:828px) {
+    .pg2prt2 {
+        display: block;
+        text-align: center;
+    }.title-name {
+        width: 300px;
+        margin: auto;
+    }.pg2txt {
+        margin: auto;
+        width: auto;
+    }.pg2title {
+
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .pg5 {
+        font-size: 24px;
+        padding: 50px;
+    }.ul {
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width:724px) {
+    .pg2title {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    .pg2-top {
+        display: block;
+    }.pg2prt2 {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width:905px) {
+    .pg3box{
+        display: block;
+        height: auto;
+        width: auto;
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }.pg3box1,  .pg3box2, .pg3box3{
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+        margin: 30px;
+    }
+}
+
+
+@media only screen and (max-width:1027px) {
+    .ul {
+    margin-left: 0;    
+}
+}
